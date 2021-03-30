@@ -6,11 +6,17 @@
     <body>
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        
+            <input type="number" id="principal" name="principal" placeholder="Principal" />
+            <input type="number" id="rate" name="rate" placeholder=" Rate %"/>
+            <input type="number" id="time" name="time" placeholder="Duration in months" />
+            <div style="display:flex;">
+                <label for="simpleintrest">Simple Intrest</label>
+               <b> <div id="simpleintrest" name="simpleintrest">
 
-        <button onclick="compute()">Compute</button>
+                </div> </b>
+            </div>
+            <input onclick="handleSubmit(event)" type="submit" id="submit" class="submit" />
+        
     </body>
 </html>
