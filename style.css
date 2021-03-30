@@ -1,7 +1,12 @@
-body {background-color:rgb(28, 25, 21); color:white;}
+body {background-color:rgb(28, 25, 21); color:brown;}
 h1{color:rgb(33, 224, 33);}
 
-#simpleintrest{
-    color:white;
-}
 
+.form-class{
+    background:white;
+    width:50%;
+    height:50%;
+    color:white;
+    border-radius:4px;
+    border: 2px solid black;
+}
