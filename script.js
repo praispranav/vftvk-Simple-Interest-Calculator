@@ -11,7 +11,7 @@ function handleSubmit(event)
         document.getElementById("simpleintrest").innerHTML = ": " + " :  " + "Value of Principal Cannot be or zero negative";
         alert("Value cannot be negative or zero")
     }
-    else if (p>=0){
+    else if (p>0){
 
     
         var r = document.getElementById("rate").value;
