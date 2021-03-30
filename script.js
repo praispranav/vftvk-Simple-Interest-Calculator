@@ -13,4 +13,10 @@ function handleSubmit(event)
     document.getElementById("simpleintrest").innerHTML = ": " + " :  " + si;
     
 }
-        
+
+function handleChange(){
+    
+    var r = document.getElementById("rate").value;
+    document.getElementById("change").innerHTML = r+"%";
+
+}
