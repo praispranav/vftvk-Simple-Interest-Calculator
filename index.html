@@ -4,21 +4,51 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="form">
         <h1>Simple Interest Calculator</h1>
-    <div class="form-class">
-            <label for="principal">Principal</label>
-            <input type="number" id="principal" name="principal" placeholder="Principal" />
-            <br><label for="rate">Rate</label><input type="range" id="rate" onchange="handleChange()" name="rate" min="1" max="100" placeholder=" Rate %"/>
+            <div class="row">
+                <div class="col-5">
+                    <label for="principal">Principal</label>
+                </div>
+                <div class="col-5">
+                    <input type="number" id="principal" name="principal" placeholder="Principal" />
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                        <br><label for="rate">Rate</label>
+                    </div>
+                    <div class="col-5">
+                        <br><input type="range" id="rate" onchange="handleChange()" width="300px" name="rate" min="1" max="20" placeholder=" Rate %"/>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <br><label for="time">Time in Months(Note: Intrest Rate are per annum)</label>
+                </div>
+                <div class="col-5">
+                    <br><input type="number" id="time" name="time" placeholder="Duration in months" />
+                </div>
+            </div>
             <div id="change"></div>
-            <br><label for="time">Time in Months</label><input type="number" id="time" name="time" placeholder="Duration in months" />
-            <div style="display:flex;">
-                <label for="simpleintrest">Simple Intrest</label>
-               <b> <div id="simpleintrest" name="simpleintrest">
+            <div class="row">
+                <div class="col-5">
+                    <br><label class="col-5" for="simpleintrest">Simple Intrest</label>
+                </div>
+                <div class="col-5">
+                    <b> <br><div class="col-5" id="simpleintrest" name="simpleintrest">
+
+                </div>
 
                 </div> </b>
             <br></div>
-            <input onclick="handleSubmit(event)" type="submit" id="submit" class="submit" />
-        <p>&#169;  All right Reserved.</p>
-        </div>
+            <div class="row">
+                <div class="col-5">
+<br>                    <input onclick="handleSubmit(event)" type="submit" id="submit" class="submit" />
+                </div>
+                <br>
+            </div>
+            </div>
     </body>
 </html>
